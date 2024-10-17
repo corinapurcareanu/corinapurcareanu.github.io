@@ -48,11 +48,6 @@
   }
 }
 
-.left.hand {
-  /* TODO */
-
-}
-
 .right.hand {
   animation-name: righthandHi;
   animation-duration: 2s;
