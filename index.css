@@ -150,3 +150,128 @@ body {
     transform: translate(700px, -150px);
   }
 }
+
+/**
+
+  Use animations here. Useful resources on http://docs.codacloud.net
+
+**/
+
+
+
+.head {
+  animation-name: headJump;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 100%;
+}
+
+@keyframes headJump {
+  from {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-50px); /* Moves head up by 50px */
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+.body {
+  animation-name: bodyJump;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 100%; /* Pivot point at the base */
+}
+
+@keyframes bodyJump {
+  from {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-50px); /* Moves body up by 50px */
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+.left.hand {
+  /* TODO */
+
+}
+
+.right.hand {
+  animation-name: righthandHi;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transform-origin: 0% 0;
+}
+
+
+@keyframes righthandHi {
+  from {
+    transform: rotate(0);
+  }
+
+  50% {
+    transform: rotate(-160deg);
+  }
+}
+
+.left.foot {
+  animation-name: leftfootUp;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 100%; /* Pivot point at the bottom center */
+}
+
+@keyframes leftfootUp {
+  from {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-50px); /* Adjust the value to move the foot up */
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+.right.foot {
+  animation-name: rightfootUp;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 100%;
+}
+
+@keyframes rightfootUp {
+  from {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-50px);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes righthandHi {
+  from {
+    transform: rotate(0);
+  }
+
+  50% {
+    transform: rotate(-160deg);
+  }
+}
